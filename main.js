@@ -26,20 +26,34 @@ class Vingador extends Pessoa {
   }
 
   lutar() {
-    alert(`${this.nome} está lutando usando ${this.poderes[1]}`);
+    alert(`${this.nome} está lutando usando ${this.poderes[3]}`);
   }
 }
 
-const thor = new Vingador(
-  "Thor",
-  "1.85",
-  "100kg",
-  ["Deus do Trovão", "Super força", "Vôo", "Longevidade"],
+// const thor = new Vingador(
+//   "Thor",
+//   "1.85",
+//   "100kg",
+//   ["Deus do Trovão", "Super força", "Vôo", "Longevidade"],
+//   true,
+//   true,
+//   false
+// );
+
+const ironMan = new Vingador(
+  "Homem de Ferro",
+  "1.78",
+  "83kg",
+  ["Dinheiro a dar com pau", "Inteligência", "Vôo", "Armadura inteligente"],
   true,
   true,
   false
 );
 
+// document.getElementById("lutar").onclick = function () {
+//   thor.lutar();
+// };
+
 document.getElementById("lutar").onclick = function () {
-  thor.lutar();
+  ironMan.lutar();
 };
